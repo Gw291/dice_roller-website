@@ -14,7 +14,7 @@ function rollDice(){
     for(let i = 0; i < numoDice; i++){
     let value = Math.floor(Math.random() * 6) + 1;
     rollingValues.push(value);
-    rollingImages.push(`<img src="dice_${value}.webp" alt="Dice ${value}">`);
+    rollingImages.push(`<img src="dice_images/dice_${value}.webp" alt="Dice ${value}">`);
     }
 
     diceResult.textContent = `dice: ${rollingValues.join(', ')}`;
@@ -28,7 +28,7 @@ function rollDice(){
     for(let i = 0; i < numoDice; i++){
         let value = Math.floor(Math.random() * 6) + 1;
         values.push(value);
-        images.push(`<img src="dice_${value}.webp" alt="Dice ${value}">`);
+        images.push(`<img src="dice_images/dice_${value}.webp" alt="Dice ${value}">`);
     }
 
     diceResult.textContent = `dice: ${(values.join(', '))}`;
